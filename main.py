@@ -63,7 +63,7 @@ def transform_numbered_list(text: str) -> str:
     return output_str.strip('\n ')
 
 
-test_cases = {
+test_cases = [
     (
         'Patient presents today with several issues. Number one BMI has increased by 10% since their last visit. Number next patient reports experiencing dizziness several times in the last two weeks. Number next patient has a persistent cough that hasn’t improved for last 4 weeks.',
         'Patient presents today with several issues.\n1. Bmi has increased by 10% since their last visit.\n2. Patient reports experiencing dizziness several times in the last two weeks.\n3. Patient has a persistent cough that hasn’t improved for last 4 weeks.'
@@ -84,7 +84,7 @@ test_cases = {
         'Here is a sentence with a list and the word number inside its list points. Number three the word number will appear right here. Number next It will not appear in this line. Number next the word number will appear in this line.',
         'Here is a sentence with a list and the word number inside its list points.\n3. The word number will appear right here.\n4. It will not appear in this line.\n5. The word number will appear in this line.'
     )
-}
+]
 
 
 if __name__ == '__main__':
